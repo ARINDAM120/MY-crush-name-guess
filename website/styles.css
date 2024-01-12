@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6; /* Light background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    position: relative; /* Make the box a positioning context for absolute positioning */
+    background-color: #fff; /* White box background color */
+    border: 5px solid #ff9999; /* Heart border color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1, .subheading {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 70px; /* Adjust the font size for "My Crush Name" */
+    position: absolute;
+    top: -260px; /* Adjust the distance above the box */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.subheading {
+    font-size: 18px;
+    margin-top: 0;
+    color: #666; /* Subheading color */
+    position: absolute;
+    top: -130px; /* Adjust the distance above the box */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    background-color: #ff9999; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666; /* Hover color */
+}
